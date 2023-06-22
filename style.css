@@ -1,25 +1,98 @@
-body{
+body {
+    background-color: #393E46;
+    color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    background-color: grey;
+    justify-content: center;
 }
 
-/* title p align in left bold */
-.title p {
-    text-align: left;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
-
-}
 
 .content {
+    margin-top: 4%;
+}
+
+.menu {
+    background-color: #222831;
+    width: 498px;
+    height: 50px;
+    margin-bottom: 5px;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+}
+
+.icons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
+    flex-direction: row;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+.icons-section-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icons-section-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 12%;
+    margin-left: 3px;
+    margin-right: 10px;
+}
+
+.editor textarea {
+    width: 466px;
+    height: 260px;
+    background-color: #222831;
+    color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    outline: none;
+    resize: vertical;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    min-height: 260px;
+}
+
+.icon-btn:hover {
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+.divider {
+    border-left: 1px solid #EEEEEE;
+    height: 100%;
+}
+
+.submit-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submit-btn button {
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.submit-btn button:hover {
+    background-color: #393E46;
+    color: #00ADB5;
 }

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons.css">
+
 </head>
 <body>
     <div class="content">
@@ -13,20 +15,25 @@
         </div>
         <div class="editor">
             <div class="menu">
-                <i class="fa-solid fa-h" style="color: #000000;"></i>
-                <i class="fa-duotone fa-list" style="--fa-primary-color: #000000; --fa-secondary-color: #555555;"></i>
-                <i class="fa-duotone fa-code" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></i>
-                <i class="fa-duotone fa-link" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></i>
-                <i class="fa-duotone fa-quote-left" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></i>
-                <i class="fa-solid fa-b" style="color: #000000;"></i>
-                <i class="fa-solid fa-italic" style="color: #000000;"></i>
-                <i class="fa-duotone fa-square-check" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></i>
-            
-                <i class="fa-duotone fa-bookmark" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></i>
+                <div class="icons">
+                    <div class="icons-section-1">
+                        <i title="Heading" class="gg-add-r icon-btn"></i>
+                        <i title="Code" class="gg-terminal icon-btn"></i>
+                        <i title="Quote" class="gg-quote-o icon-btn"></i>
+                        <i title="Link" class="gg-arrow-top-right-r icon-btn"></i>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="icons-section-2 ">
+                        <i Title="Check" class="gg-check-r icon-btn"></i>
+                        <i title="List" class="gg-list icon-btn" ></i>
+                    </div>
+                </div>
             </div>
-            <textarea name="" id="" cols="30" rows="10">
-
+            <textarea placeholder="Digite um texto." name="" id="" cols="30" rows="10">
             </textarea>
+            <div class="submit-btn">
+                <button>Salvar</button>
+            </div>
             
         </div>
     </div>
