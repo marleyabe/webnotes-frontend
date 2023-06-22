@@ -1,3 +1,4 @@
+//add text area script
 const textarea = document.getElementById('message');
 
 textarea.value = '';
