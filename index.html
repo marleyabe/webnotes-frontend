@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Notes</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="icons.css">
 
@@ -11,7 +11,7 @@
 <body>
     <div class="content">
         <div class="title">
-            <p>Web Note</p>
+            <p>Web Notes</p>
         </div>
         <div class="editor">
             <div class="menu">
@@ -32,15 +32,33 @@
             <textarea placeholder="Digite um texto." name="" id="message" cols="30" rows="10">
             </textarea>
             <div class="submit-btn">
-                <button>Salvar</button>
+                <button id="modal-btn">Leitura</button>
+                <button id="submit-note">Salvar</button>
             </div>
             
         </div>
     </div>
+
+    <dialog id="modal">
+        <div class="modal">
+            <div class="modal-content">
+                <DIV id="modal-text" class="modal-text">
+
+                </DIV>
+                
+                <div class="submit-btn">
+                    <button id="modal-btn-close">Fechar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    
     
 </body>
+
 <script>
 </script>
-//add script
 <script src="script.js"></script>
 </html>

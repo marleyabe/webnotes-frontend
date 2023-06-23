@@ -49,3 +49,35 @@ textarea.value += '\n- Item 1';
 textarea.value += '\n- Item 2';
 textarea.value += '\n- Item 3';
 });
+
+const modal_btn_close = document.getElementById('modal-btn-close');
+
+modal_btn_close.addEventListener('click', function handleClick() {
+    modal.close()
+});
+
+///connect database
+
+function markdowntohtml() {
+    fetch('http://localhost:5000/markdowntohtml',{
+        method: 'POST',
+        headers: {
+            'message': textarea.value
+        }})
+    .then(response => response.json())
+    .then(data => {
+        console.log('data', data['message']);
+        _data = data['message'];
+        return data['message'];
+    })
+}
+
+const modal_text = document.getElementById("modal-text")
+const modal_btn = document.getElementById('modal-btn');
+const modal = document.getElementById('modal');
+
+modal_btn.addEventListener('click', function handleClick() {
+    console.log('modal-btn', markdowntohtml())
+    modal_text.textContent  = markdowntohtml();
+    modal.showModal()
+});
